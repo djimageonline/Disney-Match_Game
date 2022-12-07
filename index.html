@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Matching Game</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Handlee&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <h1>Disney Match Game</h1>
+    </header>
+    <section id="game-container">
+
+			<!-- This is where we display the flip and match counters -->
+      <div id="ui-container">
+        <h3>Flips: <span id="flip-count">0</span></h3>
+        <h3>Matches: <span id="match-count" class="second-child">0</span></h3>
+        <h3>Timer: <span id="timer" class="third-child">0</span></h3>
+      </div>
+
+			<!-- This is where our cards will be rendered -->
+      <div id="card-container">
+      </div>
+      <!--This restarts the game by refreshing-->
+      <div id="restart-container">
+        <button class="restart-btn"><a href="index.html">Restart</a></button>
+      </div>
+    
+    </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.4.1/underscore-min.js" integrity="sha512-xHPfYya0Ac9NYcp0d6YKVnP/n7dcRGiQCsGKC+BMpziXwgg/6VogplMOS+nqUXQIPmtuGwZ25fAcSgtjBxBVfg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://small-potatoes.github.io/podium-webdev/tbhqtesting.js"></script>
+    <script src="provided.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
+

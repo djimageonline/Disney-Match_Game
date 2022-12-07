@@ -1,0 +1,187 @@
+
+:root {
+  --card-width: 125px;
+  --card-height: 175px;
+}
+
+body {
+  margin: 0;
+  background: url(img/max3.jpg);
+  background-position: center;
+  background-size: cover;
+  color: yellow;
+  font-family: Handlee;
+  text-shadow: 2px 2px #aa956e;
+}
+
+h1 {
+  font-size: 60px;
+  text-align: center;
+}
+
+#ui-container {
+  text-align: center;
+}
+
+#ui-container h3 {
+  margin: 0;
+  display: inline-block;
+  font-size: 30px;
+  text-align: center;
+}
+
+#ui-container h3:first-child {
+  margin-right: 40px;
+}
+
+#ui-container h3 .second-child {
+  margin-right: 40px;
+}
+
+
+#card-container {
+  font-size:0;
+  margin: 50px auto;
+  width: calc((var(--card-width) + 24px) * 4);
+}
+
+.card {
+  display: inline-block;
+  position: relative;
+  margin: 10px;
+  width: var(--card-width);
+  height: var(--card-height);
+  border: 2px solid transparent;  
+  overflow: hidden;
+}
+
+/* Style the two logo images themselves. */
+.card-down,
+.card-up {
+  /* Take images out of the flow. */
+  position: absolute;
+
+  width: 100%;
+  height: 100%;
+
+  /* When facing away from the screen each image should be hidden. */
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  border-radius: 5px;
+  transition-duration: .3s;
+}
+
+.card-down {
+  background-image: url(img/card.png);
+  background-position: center;
+  background-size: cover;
+}
+
+.card-up {
+  background-position: center;
+  background-size: cover;
+  transform: rotateY(180deg);
+}
+
+.flipped .card-down {
+  transform: rotateY(180deg);
+}
+
+.flipped .card-up {
+  transform: rotateY(0deg);
+}
+
+.image-1 .card-up {
+  background-image: url(img/image-1.jpeg), linear-gradient(#72dbf4, #72dbf4);
+}
+
+.image-2 .card-up {
+  background-image: url(img/image-2.png), linear-gradient(#72dbf4, #72dbf4);
+}
+
+.image-3 .card-up {
+  background-image: url(img/image-3.jpg), linear-gradient(#72dbf4, #72dbf4);
+}
+
+.image-4 .card-up {
+  background-image: url(img/image-4.jpeg), linear-gradient(#72dbf4, #72dbf4);
+}
+
+.image-5 .card-up {
+  background-image: url(img/image-5.jpeg), linear-gradient(#72dbf4, #72dbf4);
+}
+
+.image-6 .card-up {
+  background-image: url(img/image-6.png), linear-gradient(#72dbf4, #72dbf4);
+}
+
+.glow {
+    border: 1px solid transparent;    
+    transition: border 0.1s linear, box-shadow 0.1s linear;
+}
+
+
+@keyframes border-glow {
+  from {
+    border: 2px solid transparent;   
+    box-shadow: none;
+  }
+
+  80% {
+    border-color: yellow;
+    box-shadow: 0 0 10px yellow;
+  }
+
+  to {
+    border: 2px solid transparent;   
+    box-shadow: none;
+  }
+}
+
+.border-glow {
+  animation: border-glow 1s;
+}
+
+.end-game {
+  text-align: center;
+  font-size: 30px;
+  color: Red;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 60vw;
+  height: 10vh;
+  z-index: 1;
+  background-color: yellow;
+  border-style: solid;
+  }
+
+  #restart-container {
+    text-align: center;
+    margin: 0;
+  }
+
+  .restart-btn {
+    background-color: yellow; 
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 25px;
+    font-family: Handlee;
+    border-radius: 12px;
+    list-style-type:  none;
+    transition-duration: 0.4s;
+  }
+
+  .restart-btn:hover {
+    background-color: #64c9ff; 
+  color: white;
+  }
+
+  a:link {
+    text-decoration: none;
+  }
