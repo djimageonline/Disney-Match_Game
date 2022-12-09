@@ -1,10 +1,3 @@
-/* 
-    Don't Edit this code.  
-    This file contains the provided functions and tests for this SkillBuilder.  
-    The instructions and coding environment for this assignment are in the file script.js.
-    Don't Edit this code.  
-*/
-
 /* Variables storing an audio objects to make the various sounds.  See how it's used for the 'click' sound in the provided function below.  */
 let clickAudio = new Audio("audio/click.wav");
 let matchAudio = new Audio("audio/match.wav");
